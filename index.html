@@ -5,12 +5,12 @@
     <title>线路测速</title>
     <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href=" images/favicon.ico" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_832482_vtrs7h0ha9e.css">
+    <!--<link rel="stylesheet" href="//at.alicdn.com/t/font_832482_vtrs7h0ha9e.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
 
 <div class="container">
 
@@ -23,16 +23,16 @@
                     <li>
                         <span class="lt">线路1</span>
                         <ul class="lt loadbar">
-                            <li class="ins"><div class="bar layerFill1"></div></li>
-                            <li class="ins"><div class="bar layerFill2"></div></li>
-                            <li class="ins"><div class="bar layerFill3"></div></li>
-                            <li class="ins"><div class="bar layerFill4"></div></li>
-                            <li class="ins"><div class="bar layerFill5"></div></li>
-                            <li class="ins"><div class="bar layerFill6"></div></li>
-                            <li class="ins"><div class="bar layerFill7"></div></li>
-                            <li class="ins"><div class="bar layerFill8"></div></li>
-                            <li class="ins"><div class="bar layerFill9"></div></li>
-                            <li class="ins"><div class="bar layerFill10"></div></li>
+                            <li><div class="bar layerFill1"></div></li>
+                            <li><div class="bar layerFill2"></div></li>
+                            <li><div class="bar layerFill3"></div></li>
+                            <li><div class="bar layerFill4"></div></li>
+                            <li><div class="bar layerFill5"></div></li>
+                            <li><div class="bar layerFill6"></div></li>
+                            <li><div class="bar layerFill7"></div></li>
+                            <li><div class="bar layerFill8"></div></li>
+                            <li><div class="bar layerFill9"></div></li>
+                            <li><div class="bar layerFill10"></div></li>
                             <li><div class="bar layerFill11"></div></li>
                             <li><div class="bar layerFill12"></div></li>
                             <li><div class="bar layerFill13"></div></li>
@@ -44,8 +44,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0.85秒">
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line1" onload="showspeed()"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路2</span>
@@ -71,8 +71,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line2"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路3</span>
@@ -98,8 +98,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line3"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路4</span>
@@ -125,8 +125,9 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <!--<input class="lt time" value="0秒 " disabled>-->
+                        <span class="lt time" id="line4"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路5</span>
@@ -152,8 +153,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line5"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路6</span>
@@ -179,8 +180,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line6"></span>
+                        <a href="#" class="rt enter-btn">展示进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                     <li>
                         <span class="lt">线路7</span>
@@ -206,8 +207,8 @@
                             <li><div class="bar layerFill19"></div></li>
                             <li><div class="bar layerFill20"></div></li>
                         </ul>
-                        <input class="lt time" value="0秒 " disabled>
-                        <a href="#" class="rt enter-btn">进入 <i class="icon arrow-right-b">&#xe6f1;</i></a>
+                        <span class="lt time" id="line7"></span>
+                        <a href="#" class="rt enter-btn">展示进入<i class="icon arrow-right-b">&#xe6f1;</i></a>
                     </li>
                 </ul>
             </section>
@@ -219,19 +220,42 @@
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
-  // $(document).ready(function(){
-  //
-  //   $('.loadbar').removeClass('ins');
-  //
-  //   $('.triggerBar').click(function(){
-  //     $('.loadbar').removeClass('ins').delay(10).queue(function(next){
-  //       $(this).addClass('ins');
-  //       next();
-  //     });
-  //     return false;
-  //   });
-  //
-  // });
+
+  $(document).ready(function () {
+    $('.loadbar').removeClass('ins');
+
+    setTimeout(function(){
+      $('.loadbar').removeClass('ins').delay(10).queue(function(next){
+        $(this).addClass('ins');
+        next();
+      });
+      return false;
+    }, 1000);
+
+  })
+
+  setTimeout(function () {
+    document.getElementById("line1").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 1500)
+  setTimeout(function () {
+    document.getElementById("line2").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 1600)
+  setTimeout(function () {
+    document.getElementById("line3").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 1700)
+  setTimeout(function () {
+    document.getElementById("line4").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 1800)
+  setTimeout(function () {
+    document.getElementById("line5").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 1900)
+  setTimeout(function () {
+    document.getElementById("line6").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 2000)
+  setTimeout(function () {
+    document.getElementById("line7").innerHTML = (Math.random()*2).toFixed(2) + "秒";
+  }, 2200)
+
 </script>
 
 </body>
